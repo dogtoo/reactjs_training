@@ -1,5 +1,5 @@
 import './App.css';
-import UserInfo from '../component/UserInfo';
+import UserInfo from './component/UserInfo';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <div>
         Hello My First React Web
       </div>
-      <UserInfo />
+      <UserInfo name="Dogtoo" age="38" gender="man"/>
     </div>
     
   );
