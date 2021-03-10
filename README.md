@@ -1,3 +1,13 @@
+# Training List
+
+1. node.js
+
+2. npx create-reactjs-app (npm start)
+
+3. git hub
+
+4. remove not necessary file
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
