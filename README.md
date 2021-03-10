@@ -8,6 +8,14 @@
 
 4. remove not necessary file
 
+## Component
+
+5. Add UserInfo Component and add to App.js
+
+6. send props to UserInfo from App.js
+
+7. Graphql data
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
