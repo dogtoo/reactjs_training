@@ -16,7 +16,13 @@
 
 6. send props to UserInfo from App.js
 
-7. Graphql data
+7. Typescript \
+   install method
+
+   1. npm i typescript or
+   2. npx create-react-app \[appname\] --typescript
+
+8. json data from GraphQLZero
 
 # Getting Started with Create React App
 
