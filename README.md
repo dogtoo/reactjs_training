@@ -19,8 +19,8 @@
 7. Typescript \
    install method
 
-   1. npm i typescript or
-   2. npx create-react-app \[appname\] --typescript
+   1. npm i typescript then npx -p typescript tsc --init
+   2. npx create-react-app \[appname\] --template typescript
 
 8. json data from GraphQLZero
 
