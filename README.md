@@ -4,7 +4,7 @@
 
 1. node.js
 
-2. npx create-reactjs-app (npm start)
+2. npx create-react-app (npm start)
 
 3. git hub
 
