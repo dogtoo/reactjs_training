@@ -7,7 +7,8 @@ function App() {
       <div>
         Hello My First React Web
       </div>
-      <UserInfo name="Dogtoo" age="38" gender="man"/>
+      <UserInfo name="Dogtoo" age={38} gender="man" test="123"/>
+
     </div>
     
   );
