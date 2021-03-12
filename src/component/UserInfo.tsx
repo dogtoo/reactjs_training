@@ -1,14 +1,20 @@
 import React from "react";
 
 interface Props {
-  name: String;
-  age?: Number;
-  gender: String;
-  imgurl: String;
+  name: string;
+  age?: number;
+  gender: string;
+  imgurl: string;
+  handleEdit?: ()=> void;
 }
 
 //function UserInfo({name, age, gender, imgurl}) {
 const UserInfo: React.FC<Props> = (props) => {
+  const HashChangeEvent = () => {    
+    console.log("userinfo on click");
+    props.handleEdit?.apply(null)
+  }
+
   return (
     <div>
       <div>
@@ -26,6 +32,13 @@ const UserInfo: React.FC<Props> = (props) => {
         <span>Gender:</span>
         <div>{props.gender}</div>
       </div>
+      {
+        props.handleEdit && (
+          <div>
+            <button onClick={()=>HashChangeEvent()}>Edit</button>
+          </div>
+        )
+      }
     </div>
   )
 }
