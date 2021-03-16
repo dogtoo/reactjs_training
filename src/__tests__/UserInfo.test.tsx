@@ -1,19 +1,14 @@
 import { render, fireEvent } from '@testing-library/react';
 import UserInfo from '../component/UserInfo';
-
+let editfn = jest.fn();
 let userdata = {
   name: 'Dogtoo',
-  age: "13",
+  age: 13,
   gender: 'man',
   imgurl: '',
-  handleEdit: () => {
-    console.log('enter')
-  }
+  handleEdit: editfn
 }
-
-let editfn = jest.fn();
-
-const { getByText, getByTestId } = render(<UserInfo {...userdata} />)
+const { getByText } = render(<UserInfo {...userdata} />)
 
 test('User data info', () => {
   getByText(userdata.name);
@@ -22,7 +17,8 @@ test('User data info', () => {
 })
 
 test('edit button click', async () => {
+  const { getByTestId } = render(<UserInfo {...userdata} />)
   const button = getByTestId('editbutton')
   await fireEvent.click(button)
-  expect(button).toHaveTextContent('Button Clicked')
+  expect(editfn).toHaveBeenCalledTimes(1);
 })
